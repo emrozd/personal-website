@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Writing = () => {
   return (
     <div className="min-h-screen bg-background">
@@ -5,8 +7,8 @@ const Writing = () => {
       <nav className="w-full py-6">
         <div className="max-w-4xl mx-auto px-6">
           <div className="flex justify-end space-x-8 text-sm">
-            <a href="/" className="text-muted-foreground hover:text-primary transition-colors">home</a>
-            <a href="/writing" className="text-muted-foreground hover:text-primary transition-colors">writing</a>
+            <Link to="/" className="text-muted-foreground hover:text-primary transition-colors">home</Link>
+            <Link to="/writing" className="text-muted-foreground hover:text-primary transition-colors">writing</Link>
           </div>
         </div>
       </nav>
@@ -27,9 +29,9 @@ const Writing = () => {
             {/* Sample blog entries */}
             <article className="border-b border-border pb-6">
               <h3 className="text-lg font-medium text-foreground mb-2">
-                <a href="#" className="hover:text-primary transition-colors">
+                <Link to="/blog/pricing-technology" className="hover:text-primary transition-colors">
                   The Future of Pricing Technology at Scale
-                </a>
+                </Link>
               </h3>
               <p className="text-muted-foreground text-sm mb-3">December 15, 2024</p>
               <p className="text-foreground leading-relaxed">
@@ -39,9 +41,9 @@ const Writing = () => {
 
             <article className="border-b border-border pb-6">
               <h3 className="text-lg font-medium text-foreground mb-2">
-                <a href="#" className="hover:text-primary transition-colors">
+                <Link to="/blog/data-driven-decisions" className="hover:text-primary transition-colors">
                   Data-Driven Product Decisions: Beyond the Hype
-                </a>
+                </Link>
               </h3>
               <p className="text-muted-foreground text-sm mb-3">November 28, 2024</p>
               <p className="text-foreground leading-relaxed">
@@ -51,9 +53,9 @@ const Writing = () => {
 
             <article className="border-b border-border pb-6">
               <h3 className="text-lg font-medium text-foreground mb-2">
-                <a href="#" className="hover:text-primary transition-colors">
+                <Link to="/blog/turkey-digital-economy" className="hover:text-primary transition-colors">
                   Understanding Modern Turkey Through Its Digital Economy
-                </a>
+                </Link>
               </h3>
               <p className="text-muted-foreground text-sm mb-3">October 12, 2024</p>
               <p className="text-foreground leading-relaxed">
@@ -63,9 +65,9 @@ const Writing = () => {
 
             <article className="border-b border-border pb-6">
               <h3 className="text-lg font-medium text-foreground mb-2">
-                <a href="#" className="hover:text-primary transition-colors">
+                <Link to="/blog/slow-cooking" className="hover:text-primary transition-colors">
                   The Art of Slow Cooking: Lessons from My Istanbul Kitchen
-                </a>
+                </Link>
               </h3>
               <p className="text-muted-foreground text-sm mb-3">September 8, 2024</p>
               <p className="text-foreground leading-relaxed">

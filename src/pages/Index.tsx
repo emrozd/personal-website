@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import profilePhoto from "@/assets/profile-photo.jpg";
 const Index = () => {
   return <div className="min-h-screen bg-background">
@@ -5,8 +6,8 @@ const Index = () => {
       <nav className="w-full py-6">
         <div className="max-w-4xl mx-auto px-6">
           <div className="flex justify-end space-x-8 text-sm">
-            <a href="/" className="text-muted-foreground hover:text-primary transition-colors">home</a>
-            <a href="/writing" className="text-muted-foreground hover:text-primary transition-colors">writing</a>
+            <Link to="/" className="text-muted-foreground hover:text-primary transition-colors">home</Link>
+            <Link to="/writing" className="text-muted-foreground hover:text-primary transition-colors">writing</Link>
           </div>
         </div>
       </nav>
