@@ -20,7 +20,7 @@ const SlowCooking = () => {
       </nav>
 
       {/* Main Content */}
-      <main className="max-w-4xl mx-auto px-6">
+      <main className="max-w-4xl mx-auto px-6 pt-8">
         {/* Back link */}
         <div className="mb-8">
           <Link to="/writing" className="text-muted-foreground hover:text-primary transition-colors text-sm">
