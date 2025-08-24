@@ -1,8 +1,6 @@
 import profilePhoto from "@/assets/profile-photo.jpg";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       {/* Navigation */}
       <nav className="w-full py-6">
         <div className="max-w-4xl mx-auto px-6">
@@ -19,8 +17,8 @@ const Index = () => {
       <main className="max-w-4xl mx-auto px-6">
         {/* Header */}
         <div className="mb-12">
-          <h1 className="text-4xl font-light text-foreground mb-2">Your Name</h1>
-          <p className="text-muted-foreground">Co-founder and CEO @ YourCompany, PhD in Computer Science from Your University</p>
+          <h1 className="text-4xl font-light text-foreground mb-2">Emre Ozdemir</h1>
+          <p className="text-muted-foreground">Analytics and Product @ Zalando</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
@@ -28,15 +26,8 @@ const Index = () => {
           <div className="lg:col-span-2 space-y-8">
             {/* Profile Image and Resume - Mobile */}
             <div className="lg:hidden flex flex-col items-center space-y-4 mb-8">
-              <img 
-                src={profilePhoto} 
-                alt="Profile" 
-                className="w-48 h-48 rounded-full object-cover"
-              />
-              <a 
-                href="#resume" 
-                className="inline-flex items-center text-primary hover:underline font-medium"
-              >
+              <img src={profilePhoto} alt="Profile" className="w-48 h-48 rounded-full object-cover" />
+              <a href="#resume" className="inline-flex items-center text-primary hover:underline font-medium">
                 📄 Resume/CV
               </a>
             </div>
@@ -100,15 +91,8 @@ const Index = () => {
           {/* Right Column - Profile Image and Resume - Desktop */}
           <div className="hidden lg:block">
             <div className="sticky top-8 space-y-4">
-              <img 
-                src={profilePhoto} 
-                alt="Profile" 
-                className="w-full max-w-xs rounded-lg object-cover shadow-sm"
-              />
-              <a 
-                href="#resume" 
-                className="inline-flex items-center text-primary hover:underline font-medium text-sm"
-              >
+              <img src={profilePhoto} alt="Profile" className="w-full max-w-xs rounded-lg object-cover shadow-sm" />
+              <a href="#resume" className="inline-flex items-center text-primary hover:underline font-medium text-sm">
                 📄 Resume/CV
               </a>
             </div>
@@ -122,8 +106,6 @@ const Index = () => {
           © Copyright 2024 Your Name. Powered by React.
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
