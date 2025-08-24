@@ -6,9 +6,7 @@ const Index = () => {
         <div className="max-w-4xl mx-auto px-6">
           <div className="flex justify-end space-x-8 text-sm">
             <a href="/" className="text-muted-foreground hover:text-primary transition-colors">home</a>
-            <a href="#blog" className="text-muted-foreground hover:text-primary transition-colors">blog</a>
-            <a href="#publications" className="text-muted-foreground hover:text-primary transition-colors">publications</a>
-            <a href="#vitae" className="text-muted-foreground hover:text-primary transition-colors">vitae</a>
+            <a href="/writing" className="text-muted-foreground hover:text-primary transition-colors">writing</a>
           </div>
         </div>
       </nav>
