@@ -36,14 +36,8 @@ const Index = () => {
             <section id="about">
               <h2 className="text-xl font-medium text-foreground mb-4">About</h2>
               <div className="prose prose-gray max-w-none text-foreground leading-relaxed">
-                <p className="mb-4">
-                  Welcome! I'm an analytics and product professional, with a specific focus on pricing. I currently work for Zalando in Berlin.
-                </p>
-                <p className="mb-4">
-                  From 2015 to 2022, I was a Research Scientist with the incredible <a href="#" className="text-primary hover:underline font-medium">Tech Company</a>, studying cutting-edge systems. I received my PhD in Computer Science at <strong>Your University</strong>, advised by <a href="#" className="text-primary hover:underline">Dr. Advisor</a>. I completed my undergraduate in Mathematics at <strong>Another University</strong>.
-                </p>
                 <p>
-                  I have many fond memories of competing in national competitions and representing teams in high school, where my interests in technology and research began.
+                  Hey there. I'm an analytics and product professional at Zalando, and I'm currently based in Berlin.
                 </p>
               </div>
             </section>
@@ -62,8 +56,11 @@ const Index = () => {
             <section id="writing">
               <h2 className="text-xl font-medium text-foreground mb-4">Writing</h2>
               <div className="prose prose-gray max-w-none text-foreground leading-relaxed">
+                <p className="mb-4">
+                  My work is all about working with incredible people, building great pricing products and digging into data. It's a job I love, and you'll see some of that here.
+                </p>
                 <p>
-                  I like sharing thoughts on research and applications on <a href="#" className="text-primary hover:underline">Twitter</a> and (occasionally) <a href="#" className="text-primary hover:underline">my blog</a>.
+                  But there's more to me than that, and this is also a place for the other stuff I'm into. I'll be writing about the intersection of history, politics, and international relations with a specific focus in Turkey and Europe. I'll also be sharing my adventures in cooking.
                 </p>
               </div>
             </section>
