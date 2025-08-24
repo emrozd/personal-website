@@ -26,7 +26,7 @@ const Index = () => {
           <div className="lg:col-span-2 space-y-8">
             {/* Profile Image and Resume - Mobile */}
             <div className="lg:hidden flex flex-col items-center space-y-4 mb-8">
-              <img src={profilePhoto} alt="Profile" className="w-48 h-48 rounded-full object-cover" />
+              <img src="/lovable-uploads/5ce97e7d-dfcc-48fc-aff9-a554c5d9a269.png" alt="Profile" className="w-48 h-48 rounded-full object-cover" />
               <a href="#resume" className="inline-flex items-center text-primary hover:underline font-medium">
                 📄 Resume/CV
               </a>
@@ -88,7 +88,7 @@ const Index = () => {
           {/* Right Column - Profile Image and Resume - Desktop */}
           <div className="hidden lg:block">
             <div className="sticky top-8 space-y-4">
-              <img src={profilePhoto} alt="Profile" className="w-full max-w-xs rounded-lg object-cover shadow-sm" />
+              <img src="/lovable-uploads/5ce97e7d-dfcc-48fc-aff9-a554c5d9a269.png" alt="Profile" className="w-full max-w-xs rounded-lg object-cover shadow-sm" />
               <a href="#resume" className="inline-flex items-center text-primary hover:underline font-medium text-sm">
                 📄 Resume/CV
               </a>
