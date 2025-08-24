@@ -37,7 +37,7 @@ const Index = () => {
               <h2 className="text-xl font-medium text-foreground mb-4">About</h2>
               <div className="prose prose-gray max-w-none text-foreground leading-relaxed">
                 <p className="mb-4">
-                  Welcome! I am co-founder and CEO at <a href="#" className="text-primary hover:underline font-medium">YourCompany</a>, building an AI-powered platform for innovation.
+                  Welcome! I'm an analytics and product expert at Zalando, with a specific focus on pricing.
                 </p>
                 <p className="mb-4">
                   From 2015 to 2022, I was a Research Scientist with the incredible <a href="#" className="text-primary hover:underline font-medium">Tech Company</a>, studying cutting-edge systems. I received my PhD in Computer Science at <strong>Your University</strong>, advised by <a href="#" className="text-primary hover:underline">Dr. Advisor</a>. I completed my undergraduate in Mathematics at <strong>Another University</strong>.
