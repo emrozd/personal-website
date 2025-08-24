@@ -5,7 +5,7 @@ const Index = () => {
       <nav className="w-full py-6">
         <div className="max-w-4xl mx-auto px-6">
           <div className="flex justify-end space-x-8 text-sm">
-            <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">about</a>
+            <a href="/" className="text-muted-foreground hover:text-primary transition-colors">home</a>
             <a href="#blog" className="text-muted-foreground hover:text-primary transition-colors">blog</a>
             <a href="#publications" className="text-muted-foreground hover:text-primary transition-colors">publications</a>
             <a href="#vitae" className="text-muted-foreground hover:text-primary transition-colors">vitae</a>
