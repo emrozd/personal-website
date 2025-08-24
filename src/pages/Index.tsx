@@ -27,7 +27,7 @@ const Index = () => {
             {/* Profile Image and Resume - Mobile */}
             <div className="lg:hidden flex flex-col items-center space-y-4 mb-8">
               <img src="/lovable-uploads/5ce97e7d-dfcc-48fc-aff9-a554c5d9a269.png" alt="Profile" className="w-48 h-48 rounded-full object-cover" />
-              <a href="#resume" className="inline-flex items-center text-primary hover:underline font-medium">
+              <a href="https://drive.google.com/file/d/15eSE0XHL9lSEnxP8VQ9lR9mnLRelNRUi/view" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-primary hover:underline font-medium">
                 📄 Resume/CV
               </a>
             </div>
@@ -89,7 +89,7 @@ const Index = () => {
           <div className="hidden lg:block">
             <div className="sticky top-8 space-y-4">
               <img src="/lovable-uploads/5ce97e7d-dfcc-48fc-aff9-a554c5d9a269.png" alt="Profile" className="w-full max-w-xs rounded-lg object-cover shadow-sm" />
-              <a href="#resume" className="inline-flex items-center text-primary hover:underline font-medium text-sm">
+              <a href="https://drive.google.com/file/d/15eSE0XHL9lSEnxP8VQ9lR9mnLRelNRUi/view" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-primary hover:underline font-medium text-sm">
                 📄 Resume/CV
               </a>
             </div>
