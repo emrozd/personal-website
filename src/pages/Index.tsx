@@ -44,11 +44,9 @@ const Index = () => {
 
             {/* Research Section */}
             <section id="research">
-              <h2 className="text-xl font-medium text-foreground mb-4">Research</h2>
+              
               <div className="prose prose-gray max-w-none text-foreground leading-relaxed">
-                <p>
-                  My research has focused on understanding how systems learn from large scale data, the way they represent knowledge, and their capabilities. I've been fortunate to have many wonderful mentors on these topics, including <a href="#" className="text-primary hover:underline">Dr. One</a>, <a href="#" className="text-primary hover:underline">Dr. Two</a>, and <a href="#" className="text-primary hover:underline">Dr. Three</a>.
-                </p>
+                
               </div>
             </section>
 
@@ -66,23 +64,7 @@ const Index = () => {
             </section>
 
             {/* News Section */}
-            <section id="news" className="border-t border-border pt-8">
-              <h2 className="text-xl font-medium text-foreground mb-6">news</h2>
-              <div className="space-y-4">
-                <div className="flex flex-col sm:flex-row sm:items-start gap-4">
-                  <div className="text-muted-foreground text-sm whitespace-nowrap">Dec 22, 2024</div>
-                  <div className="text-foreground">
-                    <strong>Selected Awards:</strong> Delighted to be named one of the top innovators for our work on AI collaboration. More details of our work are discussed in <a href="#" className="text-primary hover:underline">this article</a>.
-                  </div>
-                </div>
-                <div className="flex flex-col sm:flex-row sm:items-start gap-4">
-                  <div className="text-muted-foreground text-sm whitespace-nowrap">Dec 20, 2024</div>
-                  <div className="text-foreground">
-                    <strong>Selected Talks:</strong> Some of my invited talks and keynotes: <a href="#" className="text-primary hover:underline">Conference Talk</a> and <a href="#" className="text-primary hover:underline">Workshop Presentation</a>.
-                  </div>
-                </div>
-              </div>
-            </section>
+            
           </div>
 
           {/* Right Column - Profile Image and Resume - Desktop */}
