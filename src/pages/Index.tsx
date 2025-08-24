@@ -103,7 +103,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="max-w-4xl mx-auto px-6 py-8 mt-16 border-t border-border">
         <div className="text-center text-xs text-muted-foreground">
-          © Copyright 2024 Your Name. Powered by React.
+          © Copyright 2025 Emre Ozdemir. Powered by React.
         </div>
       </footer>
     </div>;
