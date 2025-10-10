@@ -1,5 +1,3 @@
-import matter from 'gray-matter';
-
 export interface BlogPost {
   slug: string;
   title: string;
@@ -40,17 +38,25 @@ export const blogPosts: BlogPost[] = [
   }
 ];
 
+// Simple function to strip frontmatter from markdown
+function stripFrontmatter(markdown: string): string {
+  const frontmatterRegex = /^---\n[\s\S]*?\n---\n/;
+  return markdown.replace(frontmatterRegex, '').trim();
+}
+
 export async function getBlogPost(slug: string): Promise<BlogPost | null> {
   try {
+    // Find the metadata
+    const metadata = blogPosts.find(post => post.slug === slug);
+    if (!metadata) return null;
+    
     // Dynamic import of markdown file
     const markdown = await import(`../content/blog/${slug}.md?raw`);
-    const { data, content } = matter(markdown.default);
+    const content = stripFrontmatter(markdown.default);
     
     return {
-      slug: data.slug || slug,
-      title: data.title || '',
-      date: data.date || '',
-      content: content,
+      ...metadata,
+      content,
     };
   } catch (error) {
     console.error(`Failed to load blog post: ${slug}`, error);
