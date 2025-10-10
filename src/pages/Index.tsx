@@ -8,6 +8,7 @@ const Index = () => {
           <div className="flex justify-end space-x-8 text-sm">
             <Link to="/" className="text-muted-foreground hover:text-primary transition-colors">home</Link>
             <Link to="/writing" className="text-muted-foreground hover:text-primary transition-colors">writing</Link>
+            <a href="https://drive.google.com/file/d/15eSE0XHL9lSEnxP8VQ9lR9mnLRelNRUi/view" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">resume</a>
           </div>
         </div>
       </nav>
@@ -23,12 +24,9 @@ const Index = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Left Column - Content */}
           <div className="lg:col-span-2 space-y-8">
-            {/* Profile Image and Resume - Mobile */}
-            <div className="lg:hidden flex flex-col items-center space-y-4 mb-8">
+            {/* Profile Image - Mobile */}
+            <div className="lg:hidden flex justify-center mb-8">
               <img src="/lovable-uploads/5ce97e7d-dfcc-48fc-aff9-a554c5d9a269.png" alt="Profile" className="w-48 h-48 rounded-full object-cover" />
-              <a href="https://drive.google.com/file/d/15eSE0XHL9lSEnxP8VQ9lR9mnLRelNRUi/view" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-primary hover:underline font-medium">
-                📄 Resume/CV
-              </a>
             </div>
 
             {/* About Section */}
@@ -66,13 +64,10 @@ const Index = () => {
             
           </div>
 
-          {/* Right Column - Profile Image and Resume - Desktop */}
+          {/* Right Column - Profile Image - Desktop */}
           <div className="hidden lg:block">
-            <div className="sticky top-8 space-y-4">
+            <div className="sticky top-8">
               <img src="/lovable-uploads/5ce97e7d-dfcc-48fc-aff9-a554c5d9a269.png" alt="Profile" className="w-full max-w-xs rounded-lg object-cover shadow-sm" />
-              <a href="https://drive.google.com/file/d/15eSE0XHL9lSEnxP8VQ9lR9mnLRelNRUi/view" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-primary hover:underline font-medium text-sm">
-                📄 Resume/CV
-              </a>
             </div>
           </div>
         </div>
