@@ -2,12 +2,19 @@ export interface BlogPost {
   slug: string;
   title: string;
   date: string;
-  content: string;
+  content?: string;
   excerpt?: string;
 }
 
 // Blog posts metadata for listing page
-export const blogPosts: BlogPost[] = [];
+export const blogPosts: BlogPost[] = [
+  {
+    slug: "pasta-alla-norma",
+    title: "Pasta Alla Norma",
+    date: "2025-01-15",
+    excerpt: "A classic Sicilian pasta dish featuring fried eggplant, tomato sauce, and ricotta salata.",
+  },
+];
 
 // Simple function to strip frontmatter from markdown
 function stripFrontmatter(markdown: string): string {
