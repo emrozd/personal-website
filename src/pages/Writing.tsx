@@ -9,7 +9,7 @@ const Writing = () => {
           <div className="flex justify-end space-x-8 text-sm">
             <Link to="/" className="text-muted-foreground hover:text-primary transition-colors">home</Link>
             <Link to="/writing" className="text-muted-foreground hover:text-primary transition-colors">writing</Link>
-            <a href="https://drive.google.com/file/d/15eSE0XHL9lSEnxP8VQ9lR9mnLRelNRUi/view" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">resume</a>
+            <Link to="/resume" className="text-muted-foreground hover:text-primary transition-colors">resume</Link>
           </div>
         </div>
       </nav>
