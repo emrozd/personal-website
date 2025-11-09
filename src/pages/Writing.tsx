@@ -34,7 +34,7 @@ const Writing = () => {
               blogPosts.map((post) => (
                 <article key={post.slug} className="border-b border-border pb-6 last:border-0">
                   <Link to={`/blog/${post.slug}`} className="group">
-                    <h3 className="text-2xl font-medium text-foreground mb-2 group-hover:text-primary transition-colors">
+                    <h3 className="text-lg font-medium text-foreground mb-2 group-hover:text-primary transition-colors">
                       {post.title}
                     </h3>
                     <p className="text-sm text-muted-foreground mb-3">{post.date}</p>
