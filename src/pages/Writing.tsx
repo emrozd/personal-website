@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { blogPosts } from "@/lib/blog";
 
 const Writing = () => {
   return (
@@ -27,7 +28,23 @@ const Writing = () => {
           <h2 className="text-xl font-medium text-foreground mb-8">Writing</h2>
           
           <div className="space-y-6">
-            <p className="text-muted-foreground">No posts yet.</p>
+            {blogPosts.length === 0 ? (
+              <p className="text-muted-foreground">No posts yet.</p>
+            ) : (
+              blogPosts.map((post) => (
+                <article key={post.slug} className="border-b border-border pb-6 last:border-0">
+                  <Link to={`/blog/${post.slug}`} className="group">
+                    <h3 className="text-2xl font-medium text-foreground mb-2 group-hover:text-primary transition-colors">
+                      {post.title}
+                    </h3>
+                    <p className="text-sm text-muted-foreground mb-3">{post.date}</p>
+                    {post.excerpt && (
+                      <p className="text-foreground">{post.excerpt}</p>
+                    )}
+                  </Link>
+                </article>
+              ))
+            )}
           </div>
         </section>
       </main>
